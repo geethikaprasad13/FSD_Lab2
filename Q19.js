@@ -1,27 +1,26 @@
 function customItr(a) {
-    let count = 0;
-    let curr = 1; 
+    let count = 0; 
+    let curr = 1;
     return {
         next() {
             if (count < a) {
                 count++;
                 return {
-                    value: curr++, 
-                    done: false    
+                    value: curr++,
+                    done: false         
                 };
-            }
-            return {
-                done: true
-            };
+            } 
+                return {
+                    done: true          
+                };
         },
         [Symbol.iterator]() {
-            return this;
+            return this; 
         }
     };
 }
-const a = 13; 
+const a = 13
 const iterator = customItr(a);
-
 for (const val of iterator) {
-    console.log(val);
+    console.log(val); 
 }
