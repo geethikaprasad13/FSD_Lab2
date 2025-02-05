@@ -1,0 +1,14 @@
+{
+    "user1":{
+        "name":"Gia",
+        "email":"gia@gmail.com"
+    },
+    "user2":{
+        "name":"Ria",
+        "email":"ria@gmail.com"
+    },
+    "user3":{
+        "name":"Pia",
+        "email":"pia@gmail.com"
+    }
+}
