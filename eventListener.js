@@ -1,4 +1,4 @@
-const EventManagement = require('EventManagement');
+const EventManagement = require('FSD_Lab2\EventManagement.js');
 const eventManager = new EventManagement();
 eventManager.on('start', () => {
   console.log("Listening: The event has started.");
