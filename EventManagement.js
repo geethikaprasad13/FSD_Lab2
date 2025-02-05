@@ -1,24 +1,14 @@
-const EventManagement = require('./EventManagement');
-
-// Instantiate EventManagement to listen to events
+const EventManagement = require('events');
 const eventManager = new EventManagement();
-
-// Listen for the 'start' event
 eventManager.on('start', () => {
-  console.log("Listening: The event has started.");
+  console.log('Listener: Event Started.');
 });
-
-// Listen for the 'in-progress' event
 eventManager.on('in-progress', () => {
-  console.log("Listening: The event is in progress.");
+  console.log('Listener: Event In Progress.');
 });
-
-// Listen for the 'completed' event
 eventManager.on('completed', () => {
-  console.log("Listening: The event has been completed.");
+  console.log('Listener: Event Completed.');
 });
-
-// Trigger the events
 eventManager.startEvent();
 eventManager.inProgressEvent();
 eventManager.completeEvent();
